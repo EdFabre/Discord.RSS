@@ -1,4 +1,5 @@
-const config = require('../../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 const striptags = require('striptags')
 const moment = require('moment-timezone')
 const cleanEntities = require('entities')

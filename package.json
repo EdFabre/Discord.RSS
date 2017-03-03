@@ -1,26 +1,35 @@
 {
-  "name": "Discord.RSS",
-  "version": "1.0.0",
-  "description": "Discord RSS bot with customizable feeds",
+  "name": "discord-module-rss",
+  "version": "0.2.0",
+  "description": "This is a fork of synzen's Discord RSS bot with customizable feeds. I have converted it into a module which can be added to your existing bot.",
   "main": "rssServer.js",
-  "author": "synzen",
+  "author": "enfabre",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/synzen/Discord.RSS/issues"
+    "url": "https://github.com/EdFabre/Discord.RSS/issues"
   },
   "dependencies": {
     "discord.js": "^11.0.0",
     "entities": "^1.1.1",
+    "erlpack": "github:hammerandchisel/erlpack#master",
     "feedparser": "^2.1.0",
     "fetch": "^1.1.0",
+    "fs-extra": "^2.0.0",
+    "iconv": "*",
     "moment": "^2.17.1",
     "moment-timezone": "^0.5.11",
-    "striptags": "^2.1.1",
+    "nconf": "^0.8.4",
+    "node-opus": "^0.2.4",
+    "rekuire": "^0.1.9",
     "sqlite3": "^3.1.8",
-    "iconv": "*"
+    "striptags": "^2.1.1",
+    "uws": "^0.13.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/synzen/Discord.RSS.git"
+    "url": "git+https://github.com/EdFabre/Discord.RSS.git"
+  },
+  "engines": {
+    "node": ">=6.0.0"
   }
 }

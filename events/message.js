@@ -1,4 +1,5 @@
-const config = require('../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 const controllerCmds = require('../commands/controller/controllerCmds.js')
 const loadCommand = (file) => require(`../commands/${file}.js`)
 const checkPerm = require('../util/checkPerm.js')

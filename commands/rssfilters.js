@@ -1,6 +1,7 @@
 const filters = require('./util/filters.js')
 const getIndex = require('./util/printFeeds.js')
-const config = require('../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 const fileOps = require('../util/fileOps.js')
 
 function isEmptyObject(obj) {

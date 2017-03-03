@@ -1,6 +1,7 @@
 const eventHandler = (evnt) => require(`../events/${evnt}.js`)
 const fileOps = require('../util/fileOps.js')
-const config = require('../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 
 exports.createAllListeners = function (bot) {
   bot.on('ready', function() {

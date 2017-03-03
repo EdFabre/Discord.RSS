@@ -1,0 +1,13 @@
+{
+  "name": "cod3onfire",
+  "id": "255415774146068480",
+  "sources": [
+    {
+      "enabled": 1,
+      "name": "269209104445210625_42https://slashdot.org/",
+      "title": "Slashdot",
+      "link": "http://rss.slashdot.org/Slashdot/slashdotMain",
+      "channel": "269209104445210625"
+    }
+  ]
+}

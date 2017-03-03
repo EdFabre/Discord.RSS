@@ -1,5 +1,6 @@
 const credentials = require('../../mysqlCred.json')
-const config = require('../../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 const sqlType = config.feedManagement.sqlType.toLowerCase()
 const sql = (sqlType === 'mysql') ? require('mysql') : require('sqlite3').verbose()
 

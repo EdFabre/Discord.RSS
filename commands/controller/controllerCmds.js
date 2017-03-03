@@ -1,4 +1,5 @@
-const config = require('../../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 const Discord = require('discord.js')
 
 exports.stats = function (bot, message) {

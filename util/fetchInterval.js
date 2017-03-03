@@ -1,4 +1,5 @@
-const config = require('../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 var fetchInterval
 var refreshTime = (config.feedSettings.refreshTimeMinutes) ? config.feedSettings.refreshTimeMinutes : 15
 

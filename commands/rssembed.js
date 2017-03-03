@@ -1,5 +1,6 @@
 const fileOps = require('../util/fileOps.js')
-const config = require('../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 const getIndex = require('./util/printFeeds.js')
 const channelTracker = require('../util/channelTracker.js')
 const embedProperties = [['Color', 'The sidebar color of the embed\nThis MUST be an integer color between 0 and 16777215. See https://www.shodor.org/stella2java/rgbint.html', 'color'],

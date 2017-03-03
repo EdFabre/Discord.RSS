@@ -3,7 +3,8 @@ const getFeed = require('../rss/rss.js')
 const sqlCmds = require('../rss/sql/commands.js')
 const sqlConnect = require('../rss/sql/connect.js')
 const fileOps = require('./fileOps.js')
-const config = require('../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 const fetchInterval = require('./fetchInterval.js')
 
 module.exports = function (bot) {
