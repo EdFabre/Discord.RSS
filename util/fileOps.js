@@ -1,5 +1,6 @@
 const fs = require('fs');
-const config = require('../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 
 function updateContent(realFile, inFile, cacheFile) {
   if (process.env.isCmdServer) process.send({id: realFile, contents: JSON.stringify(inFile, null, 2)}); //child process

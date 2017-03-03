@@ -27,7 +27,8 @@
       7. Log all items in feed in table
       8. gatherResults() and close connection
 */
-const config = require('../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 const moment = require('moment-timezone')
 const requestStream = require('./request.js')
 const FeedParser = require('feedparser');

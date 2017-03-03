@@ -1,5 +1,6 @@
 const Discord = require('discord.js')
-const config = require('../../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 const commandList = require('../../util/commandList.json')
 const channelTracker = require('../../util/channelTracker.js')
 

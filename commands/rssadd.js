@@ -2,7 +2,8 @@ const channelTracker = require('../util/channelTracker.js')
 const initializeRSS = require('../rss/initialize.js')
 const sqlConnect = require('../rss/sql/connect.js')
 const sqlCmds = require('../rss/sql/commands.js')
-const config = require('../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 
 module.exports = function (bot, message) {
 

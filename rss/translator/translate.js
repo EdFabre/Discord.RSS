@@ -1,4 +1,5 @@
-const config = require('../../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 const filterFeed = require('./filters.js')
 const createEmbed = require('./embed.js')
 const Article = require('./article.js')

@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 // const loadCommand = (command) => require(`../${command}`)
-const config = require('../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 
 module.exports = function (bot, message, command) {
   var rssList = []

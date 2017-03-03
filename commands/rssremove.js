@@ -1,7 +1,8 @@
 const fileOps = require('../util/fileOps.js')
 const getIndex = require('./util/printFeeds.js')
 const sqlCmds = require('../rss/sql/commands.js')
-const config = require('../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 
 module.exports = function (bot, message, command, callback) {
 

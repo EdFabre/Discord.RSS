@@ -1,4 +1,5 @@
-const config = require('../config.json')
+var rek = require('rekuire');
+var config = rek('discord-rss-config-runtime.json');
 
 exports.checkExists = function (guildId, rssIndex, logging, initializing) {
   var guild = require(`../sources/${guildId}.json`)
