@@ -1,9 +1,9 @@
 {
-  "name": "Discord.RSS",
-  "version": "1.0.0",
+  "name": "discord-module-rss",
+  "version": "0.0.1",
   "description": "This is a fork of synzen's Discord RSS bot with customizable feeds. I have converted it into a module which can be added to your existing bot.",
   "main": "rssServer.js",
-  "author": "synzen",
+  "author": "enfabre",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/EdFabre/Discord.RSS/issues"
@@ -28,5 +28,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EdFabre/Discord.RSS.git"
+  },
+  "engines": {
+    "node": ">=6.0.0"
   }
 }
