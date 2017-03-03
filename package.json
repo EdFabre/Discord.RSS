@@ -1,6 +1,6 @@
 {
   "name": "discord-module-rss",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "This is a fork of synzen's Discord RSS bot with customizable feeds. I have converted it into a module which can be added to your existing bot.",
   "main": "rssServer.js",
   "author": "enfabre",
